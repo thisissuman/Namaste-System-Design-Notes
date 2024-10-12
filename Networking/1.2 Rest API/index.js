@@ -32,7 +32,7 @@ app.get("/todos", (req, res) => {
 app.post("/todos", (req, res) => {
   const newtodo = req.body;
   todos.push(newtodo);
-  res.json({
+  res.status(201).json({
     message: "New todo created",
   });
 });
@@ -55,6 +55,11 @@ app.put("/todos/:id", (req, res) => {
       ...newTodoData,
     };
   }
+ /*  else {
+    res.status(400).json({
+      message: 'Todo id does not exist'
+    })
+  } */
   // console.log(todos);
   res.json({
     message: "Todod updated successfully",

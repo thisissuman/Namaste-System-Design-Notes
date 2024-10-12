@@ -192,8 +192,12 @@ Content-Type: text/css; charset=UTF
 | 200  | OK                              | The request was successful.                                 |
 | 201  | Created                         | A new resource was successfully created.                    |
 | 204  | No Content                      | The request was successful, but there's no content to return.|
+| 301  | Moved permanent                 | 																|
+| 302  | Temp moving                     |																|
 | 400  | Bad Request                     | The server couldn't understand the request due to invalid syntax.|
 | 401  | Unauthorized                    | Authentication is required and has failed or hasn't been provided.|
 | 403  | Forbidden                       | The client does not have access rights to the content.       |
 | 404  | Not Found                       | The server can't find the requested resource.                |
 | 500  | Internal Server Error           | The server encountered an error and can't complete the request.|
+
+ - We need use status code in our code, to know where exactly we have the issue is it server, client or data.
