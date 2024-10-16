@@ -52,3 +52,6 @@ Browser <- REST / gRPC Client -> Express Server <- Protobuf / gRPC -> gRPC Serve
 - **Browser Support**: Limited support in web browsers.
 - **No Edge Caching**: Cannot leverage edge caching due to the internal use of HTTP POST.
 - **Steeper Learning Curve**: Requires familiarity with Protobuf and gRPC architecture, which can make onboarding slower.
+
+
+##  do npm run client and npm run server to start this
