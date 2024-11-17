@@ -113,3 +113,47 @@ Data normalization is essential in efficient data management, especially for cac
 ---
 
 This document provides a structured overview of caching and client-side storage methods along with important questions for interview preparation.
+
+
+
+# Service Worker
+it fix between in browsewr and network layer, It try to ensure taht it can do proxy.
+when you application wanted to get some data from network bcoz it can do the proxy so data actually get passed through it.
+Service worker will decide it will make the network request or to catch it.
+
+as it has proxy all the call will go throough the service worker, if cache present then got and get from cache if cache not present go get the request put it in cache and it will benifit in next call.
+
+Works
+----
+Serivce worker need to be registred.
+install the service worker
+activate it ordet to start any request(proxy)
+activated: ready to use it to do it in proxy.
+ 
+API Caching
+-----------
+- ReactQuery: Tanstack query (to interact with graphql or rest)
+- SWR 
+- AXIOS 
+- Apollo client
+
+
+Fetch poloicy/network plocy
+- cache-first: id data is ther eache it
+- network-only :  if network only and get the data.
+- cache-and-network: show the data and do the network call behind the scene.
+- cache-last: get the from cache list.
+- no-cahce : 
+
+State Management
+----------------
+tool lib for hepingt this,
+
+- Redux
+- Mobx
+- Context API(React)
+- Vuex(VueJS)
+- NgRx(Angular)
+- Zustand(React) 
+
+
